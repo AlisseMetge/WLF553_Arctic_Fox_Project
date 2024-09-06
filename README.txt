@@ -9,7 +9,7 @@ From the authors: "The dataset was built based on pictures extracted from motion
 Two data files were downloaded and modified as follows:
 
 1- "morph_phenology.csv" contained 189 entries, with each row representing "a single arctic fox, with its corresping moulting dates for the different moulting stages observed."
-I modified this file by removing all individual fox data and removing site duplicates, so that the file now contains only the rodent density index, temperature, and snow parameters for each site each year. This new file is called "site_data.csv" and contains.. entries.
+I modified this file by removing all individual fox data and removing site duplicates, so that the file now contains only the rodent density index, temperature, and snow parameters for each site each year. This new file is called "site_data.csv" and contains 58 entries.
 
 "site_data.csv" Columns explanation (as stated by original authors; unused columns removed by Alisse):
 year = year of observation
