@@ -18,15 +18,16 @@ indiv_ID varchar(12) NOT NULL PRIMARY KEY,
 morph char(1) CHECK (morph IN ('W', 'B'))
 );")
 
+
 dbExecute(ArcticFox_db,
           "CREATE TABLE site_year_conditions (
 site_year_id integer PRIMARY KEY AUTOINCREMENT,
 site_id char(3),
-year char(4),
+year integer,
 rodent integer CHECK (rodent IN ('1', '2', '3', '4')),
 temperature real,
 snow_depth real,
-sonw_continuous integer,
+snow_continuous integer,
 FOREIGN KEY (site_id) REFERENCES sites(site_id)
 );")
 
@@ -40,3 +41,4 @@ moult_score integer,
 FOREIGN KEY (site_year_id) REFERENCES site_year_conditions(site_year_id),
 FOREIGN KEY (indiv_ID) REFERENCES individuals(indiv_ID)
 );")
+
